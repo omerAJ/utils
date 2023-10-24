@@ -84,15 +84,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Add a specific class from dataset A to dataset B.")
     
     parser.add_argument("-s", "--src_dir", type=str, 
-                        default='/lums/new_folder/vehicle_counting/data/Vehicles', 
+                        default='', 
                         help="Path to the source dataset (Dataset A)")
     
     parser.add_argument("-d", "--dest_dir", type=str, 
-                        default='/lums/new_folder/vehicle_counting/data/combinedDataset', 
+                        default='', 
                         help="Path to the destination dataset (Dataset B)")
     
     parser.add_argument("-c", "--class_name", type=str, 
-                        default='truck', 
+                        default='className', 
                         help="Name of the class to be added from dataset A to dataset B")
 
     args = parser.parse_args()
